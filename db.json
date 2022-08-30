@@ -1,0 +1,139 @@
+{
+  "QuestionBank": [
+    {
+      "id": 1,
+      "Question": "How to delete a directory in Linux?",
+      "description": "delete folder",
+      "AnswerText": [
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 3
+        },
+        {
+          "Answer": "Modi",
+          "isCorrect": true,
+          "number": 4
+        },
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 2
+        },
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Question": "How to delete a directory in Linux?",
+      "description": "delete folder",
+      "AnswerText": [
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 3
+        },
+        {
+          "Answer": "Modi",
+          "isCorrect": true,
+          "number": 4
+        },
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 2
+        },
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "Question": "How a directory in Linux?",
+      "description": "delete folder",
+      "AnswerText": [
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 3
+        },
+        {
+          "Answer": "Modi",
+          "isCorrect": true,
+          "number": 4
+        },
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 2
+        },
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "Question": "How to delete a directory?",
+      "description": "delete folder",
+      "AnswerText": [
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 3
+        },
+        {
+          "Answer": "Modi",
+          "isCorrect": true,
+          "number": 4
+        },
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 2
+        },
+        {
+          "Answer": "Amit shah",
+          "isCorrect": true,
+          "number": 1
+        }
+      ]
+    },
+    {
+      "Question": "how is you igdfgdfgdfgdfgdfgn?",
+      "description": "dgdgdfg",
+      "AnswerText": [
+        {
+          "Answer": " ",
+          "isCorrect": true,
+          "number": 3
+        },
+        {
+          "Answer": "option c",
+          "isCorrect": true,
+          "number": 8
+        },
+        {
+          "Answer": "option b",
+          "isCorrect": true,
+          "number": 3
+        },
+        {
+          "Answer": "option d",
+          "isCorrect": true,
+          "number": 1
+        }
+      ],
+      "id": 5
+    }
+  ]
+}
