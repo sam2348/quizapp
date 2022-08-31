@@ -8,10 +8,6 @@ function Try() {
     const [showScore, setShowScore] = useState(false);
     const [loading, setLoading] = useState(true);
 
- 
-
-     
-
     console.error(currentQuestion);
 
     const handleAnswer =(number)=>{
@@ -83,7 +79,6 @@ function Try() {
                             <div className='answer'>
             
                                <h2>{user[currentQuestion].Question}</h2><br />
-                               {console.log(user[currentQuestion].AnswerText,"jhshd")} 
                                {
                                 user[currentQuestion].AnswerText.map((data,index)=>{
                                 return(

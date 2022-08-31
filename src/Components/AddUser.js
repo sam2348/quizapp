@@ -4,23 +4,27 @@ import axios from "axios";
 
 function AddUser() {
   const url = "http://localhost:3001/QuestionBank"
-  const [addAns,setAddAns]=useState([{Answer:"",isCorrect:"",number:""}]);
+  const [storeData,setStoreData]=useState([])
+  const [addAns,setAddAns]=useState({Answer:"",isCorrect:"",number:""});
   const [questiondata, setQuestionData] = useState({
     Question:'',
-    description: '',
-    AnswerText: addAns
+    AnswerText:[]
   });
 
   const onClick = (e) => {
     e.preventDefault();
     axios.post(url, {
       Question: questiondata.Question,
-      description: questiondata.description,
-      AnswerText: questiondata.AnswerText,
+      AnswerText: [storeData],
     });
     alert("yes")
   };
-
+ const AddAnswer = ()=>{
+  setStoreData([...storeData, addAns]);
+  setAddAns('')
+  alert("done")
+ }
+ console.warn(storeData);
   const iputhandler = (event) => {
     setQuestionData((prestate) => ({
       ...prestate,
@@ -34,7 +38,8 @@ function AddUser() {
       [event.target.name]: event.target.value,
     }));
   };
-  
+
+
   return (
     <>
       <div className="Addmovie">
@@ -62,29 +67,28 @@ function AddUser() {
                 id="basic-url"
                 aria-describedby="basic-addon3"
                 placeholder="Enter Correct Answer"
-                name="description"
+                name="isCorrect"
                 onChange={(event) => {
-                  iputhandler(event);
+                  inputhandler(event);
                 }}
                 required
               />
             </div>
             <div className="input-group mb-3">
               <input
-                type="text"
+                type="text"    
                 className="form-control"
                 id="basic-url"
                 aria-describedby="basic-addon3"
                 placeholder="Enter Answer"
                 name="Answer"
                 onChange={(event) => {
-                    inputhandler(event);
+                  inputhandler(event);
                 }}
                 required
               />
             </div>
-            <div className="input-group mb-3">
-              <input
+            <input
                 type="text"    
                 className="form-control"
                 id="basic-url"
@@ -96,10 +100,9 @@ function AddUser() {
                 }}
                 required
               />
-            </div>
-            <div class="d-grid gap-2 col-1 mx-10">
-            <button class="btn btn-dark" type="button"
-                // onClick={(e) => onClick(e)}
+            <div class="d-grid gap-2 col-1 mx-10 mt-2">
+            <button class="btn btn-success" type="button"
+                onClick={AddAnswer}
                 >
                 AddMore
               </button>
